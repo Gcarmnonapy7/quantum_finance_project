@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: bcb_bronze
+    description: "Raw macroeconomic data from Banco Central"
+    config:
+      meta:
+        external_location: "s3://bronze/bcb/{name}_raw.parquet"
+    tables:
+      - name: selic
+        description: "Raw daily Selic rate"
+      - name: ipca
+        description: "Raw monthly IPCA inflation rate"
+

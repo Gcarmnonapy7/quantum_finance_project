@@ -1,1 +1,24 @@
-logs
+# Environment & Secrets (Never commit to GitHub)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python & Virtual Environment
+.venv/
+__pycache__/
+*.py[cod]
+
+# Logs & Databases
+logs/
+*.log
+*.duckdb
+*.duckdb.wal
+*.db
+lakehouse/
+
+# dbt artifacts
+quantum_finance_dbt/target/
+quantum_finance_dbt/dbt_packages/
+quantum_finance_dbt/logs/
